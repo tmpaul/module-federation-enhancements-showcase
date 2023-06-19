@@ -1,9 +1,9 @@
 # Excluding shared packages at various levels in the tree
 
-`app1` consumes a `Select` component exposed by `app2`.
+`app1` consumes a `LineChart` component exposed by `app2`.
 
 - `app1` is the host application.
-- `app2` standalone application which exposes `Select` component.
+- `app2` standalone application which exposes `LineChart` component.
 
 # Cases
 
