@@ -1,0 +1,31 @@
+{
+    "name": "tmpaul-react-launch-line",
+    "version": "1.0.0",
+    "private": true,
+    "main": "lib/index.js",
+    "devDependencies": {
+        "@babel/cli": "7.22.5",
+        "@babel/core": "7.18.9",
+        "@babel/preset-react": "7.18.6"
+    },
+    "scripts": {
+        "build": "babel ./src --out-dir ./lib"
+    },
+    "dependencies": {
+        "d3-array": "^1.2.0",
+        "d3-axis": "^1.0.7",
+        "d3-ease": "^1.0.3",
+        "d3-interpolate": "^1.1.4",
+        "d3-scale": "^1.0.6",
+        "d3-selection": "^1.1.0",
+        "d3-shape": "^1.0.6",
+        "d3-time-format": "^2.0.5",
+        "d3-timer": "^1.0.5",
+        "react-motion": "^0.5.0"
+    },
+    "peerDependencies": {
+        "prop-types": "^16.13.0",
+        "react": "^16.13.0",
+        "react-dom": "^16.13.0"
+    }
+}
