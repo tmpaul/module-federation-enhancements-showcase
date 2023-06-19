@@ -24,6 +24,7 @@ on `tmpaul-react-launch-line` (a fork of [`react-launch-line`](https://github.co
 The webpack share configuration is as follows
 
 ```javascript
+// app2/webpack.config.js
 shared: { react: { singleton: true }, 'react-dom': { singleton: true }, 'd3-array': {} }
 ```
 
@@ -42,6 +43,7 @@ When webpack shares the package by default **everywhere** it finds an import, it
 To fix this, we exclude the nested dependency:
 
 ```javascript
+// app2/webpack.config.js
 {
     shared: { react: { singleton: true }, 'react-dom': { singleton: true }, 'd3-array': {
             exclude: function(context) {
