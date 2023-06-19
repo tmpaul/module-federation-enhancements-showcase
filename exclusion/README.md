@@ -18,8 +18,10 @@ a specific major version of a package
 
 ## Different major versions of a shared dependency `d3-array`.
 
-In this example, `app2` uses `d3-array` component imported directly from `d3-array@3.2.4`. Additionally it relies
-on `tmpaul-react-launch-line` (a fork of [`react-launch-line`](https://github.com/michaellyons/react-launch-line)) which in turn brings in `d3-array@1.2.4`. The webpack share configuration is as follows
+In this example, `app2` uses `d3-array` component imported directly from `d3-array@3.2.4` [here](https://github.com/tmpaul/module-federation-enhancements-showcase/blob/main/exclusion/app2/src/LineChart.js#L2). Additionally it relies
+on `tmpaul-react-launch-line` (a fork of [`react-launch-line`](https://github.com/michaellyons/react-launch-line)) which in turn brings in `d3-array@1.2.4` [here](https://github.com/tmpaul/module-federation-enhancements-showcase/blob/main/exclusion/react-launch-line/package.json#L15). 
+
+The webpack share configuration is as follows
 
 ```javascript
 shared: { react: { singleton: true }, 'react-dom': { singleton: true }, 'd3-array': {} }
