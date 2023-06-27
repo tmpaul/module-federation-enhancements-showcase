@@ -46,13 +46,9 @@ To fix this, we exclude the nested dependency:
 // app2/webpack.config.js
 {
     shared: { react: { singleton: true }, 'react-dom': { singleton: true }, 'd3-array': {
-            exclude: function(context) {
-                // When invoked by d3-scale or react-launch-line exclude from sharing
-                if (context.indexOf('react-launch-line') > -1 || context.indexOf('node_modules') > -1) {
-                return true;
-                }
-                return false;
-            }
+             exclusionCriteria: {
+                version: '< 3.x'
+             }
         } 
     }
 }
